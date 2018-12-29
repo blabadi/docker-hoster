@@ -112,7 +112,7 @@ def update_hosts_file():
         
         for id, addresses in hosts.items():
             for addr in addresses:
-                lines.append("%s    %s\n"%(addr["ip"],"   ".join(addr["domains"])))
+                lines.append("%s    %s\n"%("127.0.0.1","   ".join(addr["domains"])))
         
         lines.append("#-----Do-not-add-hosts-after-this-line-----\n\n")
 
